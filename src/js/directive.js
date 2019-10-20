@@ -2,12 +2,10 @@ import Store from "../store/index"
 const directive = (Vue) => {
   Vue.directive("require", {
     bind(el, binding, vnode) {
-      console.log(vnode)
-      let scopeRow = vnode.data.attrs.scopeRow
-      let { collection, prop } = binding.value.space
+      let { collection, rules } = binding.value
       let collections = Store.state.space[collection] = Store.state.space[collection] || []
-      let props = { prop, rules: [], scopeRow }
-      props.rules = binding.value.rules.map(rule => {
+      let props = { rules: [], vnode }
+      props.rules = rules.map(rule => {
         let infoFn = (data) => {
           let res = rule.handler(data) || { suc: true, msg: "" }
           if (!res.suc) {

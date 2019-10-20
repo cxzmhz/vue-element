@@ -6,7 +6,7 @@
 
 <script>
 import SelfTable from "./components/SelfTable.vue";
-import Direcive from "./components/Direcive.vue";
+import Direcive from "./components/Directive.vue";
 
 export default {
   name: "app",

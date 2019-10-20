@@ -1,9 +1,10 @@
 
-const valify = (valifys) => {
+const valify = (valifyData) => {
   let isValify = true;
-  valifys.forEach(item => {
+  valifyData.forEach(item => {
     item.rules.forEach(rule => {
-      !rule(item.scopeRow[item.prop]) && (isValify = false)
+      console.log(item.vnode)
+      !rule(item.vnode.componentInstance.value) && (isValify = false)
     })
   })
   return Promise.resolve(isValify)

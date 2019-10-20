@@ -5,12 +5,12 @@
       <el-table-column type="index" label="序号" width="80"></el-table-column>
       <el-table-column label="操作">
         <template slot-scope="scope">
-          <el-input :scopeRow="scope.row" v-model="scope.row.ipt1" v-require="{space:{collection:collectionName,prop:'ipt1'},rules:[{trigger:'change',handler:ipt1Handler}]}"></el-input>
+          <el-input v-model="scope.row.ipt1" v-require="{collection:collectionName,rules:[{trigger:'change',handler:ipt1Handler}]}"></el-input>
         </template>
       </el-table-column>
       <el-table-column label="样子">
         <template slot-scope="scope ">
-          <el-input :scopeRow="scope.row" v-model="scope.row.ipt2 " v-require="{space:{collection: collectionName,prop: 'ipt2'},rules:[{trigger: 'change',handler:ipt1Handler2}]} "></el-input>
+          <el-input v-model="scope.row.ipt2 " v-require="{collection:collectionName,rules:[{trigger: 'change',handler:ipt1Handler2}]} "></el-input>
         </template>
       </el-table-column>
       <el-table-column label="测试">

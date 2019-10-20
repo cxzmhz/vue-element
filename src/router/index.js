@@ -1,7 +1,8 @@
 import Vue from "vue";
 import Router from "vue-router";
 
-import Directive from "../components/Direcive.vue"
+import Directive from "../components/Directive.vue"
+import onemit from "../components/onemit.vue"
 
 Vue.use(Router);
 export default new Router({
@@ -12,6 +13,7 @@ export default new Router({
       path: "/",
       redirect: "/directive"
     },
-    { path: "/directive", component: Directive }
+    { path: "/directive", component: Directive },
+    { path: "/onemit", component: onemit }
   ]
 })
