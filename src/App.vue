@@ -1,24 +1,54 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import SelfTable from "./components/SelfTable.vue";
+import Direcive from "./components/Direcive.vue";
 
 export default {
-  name: 'app',
+  name: "app",
+  data() {
+    return {
+      test: "haha",
+      myData: {
+        name: "el-input",
+        value: "",
+        events: [
+          {
+            name: "input",
+            handler: v => {
+              this.myData.value = v;
+            }
+          },
+          {
+            name: "blur",
+            handler: () => {
+              console.log(this.myData.value);
+            }
+          }
+        ]
+      }
+    };
+  },
   components: {
-    HelloWorld
+    SelfTable,
+    Direcive
+  },
+  methods: {
+    tt(v) {
+      console.log("haha");
+      this.test = v;
+    }
   }
-}
+};
 </script>
 
 <style lang="less">
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;

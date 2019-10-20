@@ -1,0 +1,8 @@
+.is-require .el-input__inner {
+  border-color: red;
+}
+.is-require::after {
+  content: attr(data-word);
+  color: red;
+  font-size: 12px;
+}

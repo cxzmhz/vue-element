@@ -1,0 +1,11 @@
+.is-require {
+  .el-input__inner{
+    border-color: red;
+  }
+  
+  &::after {
+    content: attr(data-word);
+    color:red;
+    font-size: 12px;
+  }
+}
