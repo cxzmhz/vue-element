@@ -12,8 +12,7 @@ export default {
     return {
       ipt1: "",
       type: "el-input",
-      rules: [1, 2, 3],
-      revert3: "revert3"
+      rules: [1, 2, 3]
     };
   },
   mounted() {
