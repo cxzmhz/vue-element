@@ -25,6 +25,7 @@ export default {
   },
   methods: {
     emit() {
+      console.log("haah");
       // this.$emit("test1", "haha");
       console.log(this.$refs.ipt1);
       console.log(this.$refs.ipt1.$attrs);
