@@ -10,6 +10,7 @@
 export default {
   data() {
     return {
+      revert1: "revert1",
       ipt1: "",
       type: "el-input",
       rules: [1, 2, 3]
