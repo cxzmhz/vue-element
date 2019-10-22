@@ -32,6 +32,7 @@ export default {
     return {
       revert4: "revert4",
       revert7: "revert7",
+      revert8: "revert8",
       testProp: { "v-test": 2 },
       testName: "v-test",
       radio: 1,
