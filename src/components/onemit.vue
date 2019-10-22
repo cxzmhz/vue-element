@@ -13,7 +13,8 @@ export default {
       ipt1: "",
       type: "el-input",
       rules: [1, 2, 3],
-      revert3: "revert3"
+      revert3: "revert3",
+      revert5: "revert5"
     };
   },
   mounted() {
