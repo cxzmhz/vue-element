@@ -30,6 +30,7 @@ import { valify } from "@/js/common.js";
 export default {
   data() {
     return {
+      revert4: "revert4",
       testProp: { "v-test": 2 },
       testName: "v-test",
       radio: 1,
