@@ -14,7 +14,8 @@ export default {
       type: "el-input",
       rules: [1, 2, 3],
       revert3: "revert3",
-      revert5: "revert5"
+      revert5: "revert5",
+      revert6: "revert6"
     };
   },
   mounted() {
