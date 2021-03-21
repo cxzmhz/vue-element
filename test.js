@@ -1,0 +1,7 @@
+<%= name %>
+
+<%= watch %>
+
+<%= watchlist %>
+
+<%= fruit %>

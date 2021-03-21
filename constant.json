@@ -1,0 +1,37 @@
+[
+  {
+    "type": "input",
+    "name": "name",
+    "message": "请输入你的名字",
+    "default": "陈学忠"
+  },
+  {
+    "type": "confirm",
+    "name": "watch",
+    "message": "是否使用监听？",
+    "default": true
+  },
+  {
+    "type": "list",
+    "name": "watchlist",
+    "message": "请选择需要监听的数据",
+    "default": "1",
+    "choices": [
+      "1",
+      "2",
+      "3"
+    ],
+    "when": "watch"
+  },
+  {
+    "type": "checkbox",
+    "name": "fruit",
+    "message": "请选择喜欢的水果",
+    "default": "apple",
+    "choices": [
+      "apple",
+      "pear",
+      "banana"
+    ]
+  }
+]
